@@ -7,7 +7,7 @@
 	 Filename:     	ThreatIntelAgent.ps1
 	===========================================================================
 	.DESCRIPTION
-		Installs the latest version of the Microsoft Monitoring AAgent and installs to the customer tenancy. Requires Azure Log Analytics Workspace ID and Key.
+		Installs the latest version of the Microsoft Monitoring Agent and installs to the customer tenancy. Requires Azure Log Analytics Workspace ID and Key.
 #>
 
 #Insert the customer specific workspace ID and key below
