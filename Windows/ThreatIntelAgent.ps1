@@ -22,4 +22,4 @@ $url = "https://go.microsoft.com/fwlink/?LinkId=828603"
 $output = "C:\ProgramData\OnlineOwls\ThreatIntel\Sensor.exe"
 Invoke-WebRequest -URI $url -OutFile $output
 
-Start-Process -FilePath "Sensor.exe" -Verb runas -ArgumentList "/qn", "NOAPM=1", "ADD_OPINSIGHTS_WORKSPACE=1", "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0", "OPINSIGHTS_WORKSPACE_ID=$wsid", "OPINSIGHTS_WORKSPACE_KEY=$wskey", "AcceptEndUserLicenseAgreement=1"
+Start-Process -FilePath "Sensor.exe" -Verb runas -ArgumentList "/qn", "NOAPM=1", "ADD_OPINSIGHTS_WORKSPACE=1", "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0", 'OPINSIGHTS_WORKSPACE_ID="$wsid"', 'OPINSIGHTS_WORKSPACE_KEY="$wskey"', "AcceptEndUserLicenseAgreement=1"
